@@ -83,7 +83,6 @@ ___
 **a) Alle Filialleiter, welche Artikel vom Lieferanten "Druckwerk Trallala" beziehen (Die richtige Lösung liefert 4 Zeilen)**
 ___
 ```sql
-SELECT DISTINCT filialleiter FROM lieferant INNER JOIN  artikel ON artikel.lid = lieferant.lid INNER JOIN filiale ON filiale.fid = artikel.fid WHERE lieferant.name = 'Druckwerk Trallala';
 SELECT DISTINCT filialleiter FROM lieferant 
 INNER JOIN  artikel ON artikel.lid = lieferant.lid 
 INNER JOIN filiale ON filiale.fid = artikel.fid 
