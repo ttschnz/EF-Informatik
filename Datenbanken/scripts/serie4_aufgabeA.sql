@@ -1,0 +1,1 @@
+SELECT DISTINCT filialleiter FROM lieferant INNER JOIN  artikel ON artikel.lid = lieferant.lid INNER JOIN filiale ON filiale.fid = artikel.fid WHERE lieferant.name = 'Druckwerk Trallala';
